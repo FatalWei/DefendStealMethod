@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDC5621020E4B21900DA92FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC5620F20E4B21900DA92FF /* AppDelegate.m */; };
+		EDC5621320E4B21900DA92FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC5621220E4B21900DA92FF /* ViewController.m */; };
+		EDC5621620E4B21900DA92FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC5621420E4B21900DA92FF /* Main.storyboard */; };
+		EDC5621920E4B21900DA92FF /* DefendStealMethod.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDC5621720E4B21900DA92FF /* DefendStealMethod.xcdatamodeld */; };
+		EDC5621B20E4B21900DA92FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC5621A20E4B21900DA92FF /* Assets.xcassets */; };
+		EDC5621E20E4B21900DA92FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC5621C20E4B21900DA92FF /* LaunchScreen.storyboard */; };
+		EDC5622120E4B21900DA92FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC5622020E4B21900DA92FF /* main.m */; };
+		EDC5622B20E4B21900DA92FF /* DefendStealMethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC5622A20E4B21900DA92FF /* DefendStealMethodTests.m */; };
+		EDC5623620E4B21900DA92FF /* DefendStealMethodUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC5623520E4B21900DA92FF /* DefendStealMethodUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDC5622720E4B21900DA92FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC5620320E4B21900DA92FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC5620A20E4B21900DA92FF;
+			remoteInfo = DefendStealMethod;
+		};
+		EDC5623220E4B21900DA92FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC5620320E4B21900DA92FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC5620A20E4B21900DA92FF;
+			remoteInfo = DefendStealMethod;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDC5620B20E4B21900DA92FF /* DefendStealMethod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefendStealMethod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC5620E20E4B21900DA92FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDC5620F20E4B21900DA92FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDC5621120E4B21900DA92FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDC5621220E4B21900DA92FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDC5621520E4B21900DA92FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDC5621820E4B21900DA92FF /* DefendStealMethod.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DefendStealMethod.xcdatamodel; sourceTree = "<group>"; };
+		EDC5621A20E4B21900DA92FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDC5621D20E4B21900DA92FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDC5621F20E4B21900DA92FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC5622020E4B21900DA92FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDC5622620E4B21900DA92FF /* DefendStealMethodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DefendStealMethodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC5622A20E4B21900DA92FF /* DefendStealMethodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefendStealMethodTests.m; sourceTree = "<group>"; };
+		EDC5622C20E4B21900DA92FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC5623120E4B21900DA92FF /* DefendStealMethodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DefendStealMethodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC5623520E4B21900DA92FF /* DefendStealMethodUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefendStealMethodUITests.m; sourceTree = "<group>"; };
+		EDC5623720E4B21900DA92FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDC5620820E4B21900DA92FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC5622320E4B21900DA92FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC5622E20E4B21900DA92FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDC5620220E4B21900DA92FF = {
+			isa = PBXGroup;
+			children = (
+				EDC5620D20E4B21900DA92FF /* DefendStealMethod */,
+				EDC5622920E4B21900DA92FF /* DefendStealMethodTests */,
+				EDC5623420E4B21900DA92FF /* DefendStealMethodUITests */,
+				EDC5620C20E4B21900DA92FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDC5620C20E4B21900DA92FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDC5620B20E4B21900DA92FF /* DefendStealMethod.app */,
+				EDC5622620E4B21900DA92FF /* DefendStealMethodTests.xctest */,
+				EDC5623120E4B21900DA92FF /* DefendStealMethodUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDC5620D20E4B21900DA92FF /* DefendStealMethod */ = {
+			isa = PBXGroup;
+			children = (
+				EDC5620E20E4B21900DA92FF /* AppDelegate.h */,
+				EDC5620F20E4B21900DA92FF /* AppDelegate.m */,
+				EDC5621120E4B21900DA92FF /* ViewController.h */,
+				EDC5621220E4B21900DA92FF /* ViewController.m */,
+				EDC5621420E4B21900DA92FF /* Main.storyboard */,
+				EDC5621A20E4B21900DA92FF /* Assets.xcassets */,
+				EDC5621C20E4B21900DA92FF /* LaunchScreen.storyboard */,
+				EDC5621F20E4B21900DA92FF /* Info.plist */,
+				EDC5622020E4B21900DA92FF /* main.m */,
+				EDC5621720E4B21900DA92FF /* DefendStealMethod.xcdatamodeld */,
+			);
+			path = DefendStealMethod;
+			sourceTree = "<group>";
+		};
+		EDC5622920E4B21900DA92FF /* DefendStealMethodTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC5622A20E4B21900DA92FF /* DefendStealMethodTests.m */,
+				EDC5622C20E4B21900DA92FF /* Info.plist */,
+			);
+			path = DefendStealMethodTests;
+			sourceTree = "<group>";
+		};
+		EDC5623420E4B21900DA92FF /* DefendStealMethodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC5623520E4B21900DA92FF /* DefendStealMethodUITests.m */,
+				EDC5623720E4B21900DA92FF /* Info.plist */,
+			);
+			path = DefendStealMethodUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDC5620A20E4B21900DA92FF /* DefendStealMethod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC5623A20E4B21900DA92FF /* Build configuration list for PBXNativeTarget "DefendStealMethod" */;
+			buildPhases = (
+				EDC5620720E4B21900DA92FF /* Sources */,
+				EDC5620820E4B21900DA92FF /* Frameworks */,
+				EDC5620920E4B21900DA92FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DefendStealMethod;
+			productName = DefendStealMethod;
+			productReference = EDC5620B20E4B21900DA92FF /* DefendStealMethod.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDC5622520E4B21900DA92FF /* DefendStealMethodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC5623D20E4B21900DA92FF /* Build configuration list for PBXNativeTarget "DefendStealMethodTests" */;
+			buildPhases = (
+				EDC5622220E4B21900DA92FF /* Sources */,
+				EDC5622320E4B21900DA92FF /* Frameworks */,
+				EDC5622420E4B21900DA92FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC5622820E4B21900DA92FF /* PBXTargetDependency */,
+			);
+			name = DefendStealMethodTests;
+			productName = DefendStealMethodTests;
+			productReference = EDC5622620E4B21900DA92FF /* DefendStealMethodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDC5623020E4B21900DA92FF /* DefendStealMethodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC5624020E4B21900DA92FF /* Build configuration list for PBXNativeTarget "DefendStealMethodUITests" */;
+			buildPhases = (
+				EDC5622D20E4B21900DA92FF /* Sources */,
+				EDC5622E20E4B21900DA92FF /* Frameworks */,
+				EDC5622F20E4B21900DA92FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC5623320E4B21900DA92FF /* PBXTargetDependency */,
+			);
+			name = DefendStealMethodUITests;
+			productName = DefendStealMethodUITests;
+			productReference = EDC5623120E4B21900DA92FF /* DefendStealMethodUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDC5620320E4B21900DA92FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = zcw;
+				TargetAttributes = {
+					EDC5620A20E4B21900DA92FF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EDC5622520E4B21900DA92FF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EDC5620A20E4B21900DA92FF;
+					};
+					EDC5623020E4B21900DA92FF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EDC5620A20E4B21900DA92FF;
+					};
+				};
+			};
+			buildConfigurationList = EDC5620620E4B21900DA92FF /* Build configuration list for PBXProject "DefendStealMethod" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDC5620220E4B21900DA92FF;
+			productRefGroup = EDC5620C20E4B21900DA92FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDC5620A20E4B21900DA92FF /* DefendStealMethod */,
+				EDC5622520E4B21900DA92FF /* DefendStealMethodTests */,
+				EDC5623020E4B21900DA92FF /* DefendStealMethodUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDC5620920E4B21900DA92FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC5621E20E4B21900DA92FF /* LaunchScreen.storyboard in Resources */,
+				EDC5621B20E4B21900DA92FF /* Assets.xcassets in Resources */,
+				EDC5621620E4B21900DA92FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC5622420E4B21900DA92FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC5622F20E4B21900DA92FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDC5620720E4B21900DA92FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC5621320E4B21900DA92FF /* ViewController.m in Sources */,
+				EDC5621020E4B21900DA92FF /* AppDelegate.m in Sources */,
+				EDC5622120E4B21900DA92FF /* main.m in Sources */,
+				EDC5621920E4B21900DA92FF /* DefendStealMethod.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC5622220E4B21900DA92FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC5622B20E4B21900DA92FF /* DefendStealMethodTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC5622D20E4B21900DA92FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC5623620E4B21900DA92FF /* DefendStealMethodUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDC5622820E4B21900DA92FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC5620A20E4B21900DA92FF /* DefendStealMethod */;
+			targetProxy = EDC5622720E4B21900DA92FF /* PBXContainerItemProxy */;
+		};
+		EDC5623320E4B21900DA92FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC5620A20E4B21900DA92FF /* DefendStealMethod */;
+			targetProxy = EDC5623220E4B21900DA92FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDC5621420E4B21900DA92FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC5621520E4B21900DA92FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDC5621C20E4B21900DA92FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC5621D20E4B21900DA92FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDC5623820E4B21900DA92FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EDC5623920E4B21900DA92FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDC5623B20E4B21900DA92FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DefendStealMethod/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zcw.DefendStealMethod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDC5623C20E4B21900DA92FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DefendStealMethod/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zcw.DefendStealMethod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDC5623E20E4B21900DA92FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DefendStealMethodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zcw.DefendStealMethodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DefendStealMethod.app/DefendStealMethod";
+			};
+			name = Debug;
+		};
+		EDC5623F20E4B21900DA92FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DefendStealMethodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zcw.DefendStealMethodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DefendStealMethod.app/DefendStealMethod";
+			};
+			name = Release;
+		};
+		EDC5624120E4B21900DA92FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DefendStealMethodUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zcw.DefendStealMethodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DefendStealMethod;
+			};
+			name = Debug;
+		};
+		EDC5624220E4B21900DA92FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DefendStealMethodUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zcw.DefendStealMethodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DefendStealMethod;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDC5620620E4B21900DA92FF /* Build configuration list for PBXProject "DefendStealMethod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC5623820E4B21900DA92FF /* Debug */,
+				EDC5623920E4B21900DA92FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC5623A20E4B21900DA92FF /* Build configuration list for PBXNativeTarget "DefendStealMethod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC5623B20E4B21900DA92FF /* Debug */,
+				EDC5623C20E4B21900DA92FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC5623D20E4B21900DA92FF /* Build configuration list for PBXNativeTarget "DefendStealMethodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC5623E20E4B21900DA92FF /* Debug */,
+				EDC5623F20E4B21900DA92FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC5624020E4B21900DA92FF /* Build configuration list for PBXNativeTarget "DefendStealMethodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC5624120E4B21900DA92FF /* Debug */,
+				EDC5624220E4B21900DA92FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EDC5621720E4B21900DA92FF /* DefendStealMethod.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EDC5621820E4B21900DA92FF /* DefendStealMethod.xcdatamodel */,
+			);
+			currentVersion = EDC5621820E4B21900DA92FF /* DefendStealMethod.xcdatamodel */;
+			path = DefendStealMethod.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EDC5620320E4B21900DA92FF /* Project object */;
+}
