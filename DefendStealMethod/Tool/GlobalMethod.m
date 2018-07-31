@@ -25,18 +25,17 @@ static GlobalMethod *global = nil;
 #pragma mark - testNewBranch分支上添加衣个函数
 -(void)addFunctionOnTestNewBranch{
     NSLog(@"addFunctionOnTestNewBranch");
+    NSLog(@"改你");
 }
 
 
 #pragma mark - 在dev分支上添加一个函数
 -(void)addFunctionOnDevBranch{
     NSLog(@"addFunctionOnDevBranch");
+    NSLog(@"这是哪来的");
 }
 
-#pragma mark - 在dev分支上添加一个函数
--(void)addFunctionOnDevBranch{
-    NSLog(@"addFunctionOnDevBranch");
-}
+
 
 
 //自定义颜色转换
