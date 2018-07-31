@@ -1,0 +1,240 @@
+//
+//  PrefixHeader.pch
+//  康熙来了
+//
+//  Created by heming on 15-7-1.
+//  Copyright (c) 2015年 gdswww-ios8. All rights reserved.
+//
+
+#ifndef _____PrefixHeader_pch
+#define _____PrefixHeader_pch
+
+
+
+#ifdef __OBJC__
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+
+#import "AppDelegate.h"
+
+#import "GlobalMethod.h"
+
+//第三方导入的库
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
+#import "MWPhotoBrowser.h"
+#import "SDCycleScrollView.h"
+#import "SDWebImageManager.h"
+#import "Masonry.h"
+#import "IQKeyboardManager.h"
+#import "MJRefresh.h"
+
+
+
+
+
+#pragma mark - 宏定义方法
+
+//block 引用
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+
+#define IS_IPHONE_5                 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define kIsFirstStartApp        @"isFirstStartApp"
+
+//屏幕宽高
+#define CurrentHeight               ([UIScreen mainScreen].bounds.size.height)
+#define CurrentWidth                ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_WIDTH                [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT               [UIScreen mainScreen].bounds.size.height
+#define Current_width_Unit          (([UIScreen mainScreen].bounds.size.width) / 375.0)
+#define Current_Screen_Unit         0.5 //(([UIScreen mainScreen].bounds.size.width) / 750.0)
+#define UNIT                        CurrentWidth / 1080.0
+
+#define STATUSBAR_HEIGHT (CGRectGetHeight([UIApplication sharedApplication].statusBarFrame))
+#define NAVIGATION_BAR_HEIGHT       44.0
+
+
+
+#define RGBCOLOR(r,g,b)             [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(1.0)]
+
+//字体颜色
+#define TEXT_COLOR_333333           colorWithHexString(@"333333")
+#define TEXT_COLOR_666666           colorWithHexString(@"666666")
+#define TEXT_COLOR_999999           colorWithHexString(@"999999")
+//红色
+#define TEXT_RED_COLOR              colorWithHexString(@"ff4550")
+
+
+//默认值
+#define DefaultImage                [UIImage imageNamed:@"touxiag"]
+#define Default_Loading_Image       [UIImage imageNamed:@"picture_loading"]
+#define DefaultLogoImage            [UIImage imageNamed:@"default_logo1"]
+#define DefaultLogo_v_Image         [UIImage imageNamed:@"default_logo2"]//竖向的
+#define DefaultLogo_h_Image         [UIImage imageNamed:@"default_logo3"]//横向的
+#define DefaultColor                colorWithHexString(@"fda721")//62cd3f
+#define DefaultViewBackgounrdColor         colorWithHexString(@"f0f0f0")
+
+
+
+//导航栏上的颜色
+#define NAVI_BACKGROUND_COLOR       RGBCOLOR(255,255,255)
+#define NAVI_TITLE_COLOR            colorWithHexString(@"333333")//colorWithHexString(@"62cd3f")
+
+//文本size
+#define BouingSize(str,with,size)   [str boundingRectWithSize:CGSizeMake(with, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:size]} context:nil]
+
+#define BouingSizeWithCustomFont(str,with,font)   [str boundingRectWithSize:CGSizeMake(with, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil]
+
+
+#define userInfoFile(filePath)      [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES)objectAtIndex:0]stringByAppendingPathComponent:filePath]
+
+
+
+#define IOS8            ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 8.0)
+#define UIScreenWidth                              [UIScreen mainScreen].bounds.size.width
+#define UIScreenHeight                             [UIScreen mainScreen].bounds.size.height
+#define UISreenWidthScale   UIScreenWidth / 320
+
+
+
+
+#define SuppressPerformSelectorLeakWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+#define KIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+/*
+ 字体
+ Font: PingFangSC-Medium
+ Font: PingFangSC-Semibold
+ Font: PingFangSC-Light
+ Font: PingFangSC-Ultralight
+ Font: PingFangSC-Regular
+ Font: PingFangSC-Thin
+ */
+//常规
+#define PINGFANG_Regular_10   [UIFont fontWithName:@"PingFangSC-Regular" size:10]
+#define PINGFANG_Regular_12   [UIFont fontWithName:@"PingFangSC-Regular" size:12]
+#define PINGFANG_Regular_13   [UIFont fontWithName:@"PingFangSC-Regular" size:13]
+#define PINGFANG_Regular_14   [UIFont fontWithName:@"PingFangSC-Regular" size:14]
+#define PINGFANG_Regular_15   [UIFont fontWithName:@"PingFangSC-Regular" size:15]
+#define PINGFANG_Regular_16   [UIFont fontWithName:@"PingFangSC-Regular" size:16]
+#define PINGFANG_Regular_18   [UIFont fontWithName:@"PingFangSC-Regular" size:18]
+#define PINGFANG_Regular_24   [UIFont fontWithName:@"PingFangSC-Regular" size:24]
+
+
+//细体
+#define PINGFANG_Light_12   [UIFont fontWithName:@"PingFangSC-Light" size:12]
+#define PINGFANG_Light_13   [UIFont fontWithName:@"PingFangSC-Light" size:13]
+#define PINGFANG_Light_14   [UIFont fontWithName:@"PingFangSC-Light" size:14]
+#define PINGFANG_Light_15   [UIFont fontWithName:@"PingFangSC-Light" size:15]
+#define PINGFANG_Light_16   [UIFont fontWithName:@"PingFangSC-Light" size:16]
+
+
+
+//纤细体
+#define PINGFANG_THIN_12   [UIFont fontWithName:@"PingFangSC-Thin" size:12]
+#define PINGFANG_THIN_13   [UIFont fontWithName:@"PingFangSC-Thin" size:13]
+#define PINGFANG_THIN_14   [UIFont fontWithName:@"PingFangSC-Thin" size:14]
+#define PINGFANG_THIN_15   [UIFont fontWithName:@"PingFangSC-Thin" size:15]
+#define PINGFANG_THIN_16   [UIFont fontWithName:@"PingFangSC-Thin" size:16]
+
+//粗体
+#define PINGFANG_BOLD_13   [UIFont fontWithName:@"PingFangSC-Semibold" size:13]
+#define PINGFANG_BOLD_14   [UIFont fontWithName:@"PingFangSC-Semibold" size:14]
+
+//tableView cell
+#define CellTitle           @"CellTitle"
+#define CellViewController  @"CellViewController"
+#define CellHeight          @"CellHeight"
+#define ShowAccessory       @"ShowAccessory"
+#define CellAction          @"CellAction"
+#define CellDetail          @"CellDetail"
+#define CellUnit            @"unit"
+
+
+
+
+#pragma mark - 通知
+//token过期
+#define kNOTI_TOKEN_OVER_TIME   @"tokenOverTimeNoti"
+//登录成功的通知
+#define kNoti_Login_Success     @"loginSuccessNoti"
+//对地址的操作成功的通知
+#define kNOTI_ADDRESS_SUCCESS   @"addressSuccessNoti"
+//修改资料成功
+#define kNOTI_MODIFTY_PERSONAL_INFO_SUCCESS  @"modiftyPersonalInfoSuccess"
+//收藏或者取消收藏成功的通知
+#define kNOTI_COLLECTION_OR_CANCEL_SUCCESS  @"collectionOrCancelSuccessNoti"
+//在商品详情里改变了商品的收藏状态
+#define kNOTI_IN_GOODS_DETAIL_CHANGE_COLLECTION_STATUS @"inGoodsDetailChangeCollectionStatusNoti"
+//在首页里切换控制器的通知
+#define kNOTI_MAIN_CHANGE_VIEW_CONTROLLER       @"mainChangeViewControllerNoti"
+//填写订单在地址栏里选择了地址
+#define kNOTI_FILL_ORDER_CHOOSE_ADDRESS         @"fillOrderChooseAddressNoti"
+//下单完成 继续逛逛通知
+#define KNOTI_ORDER_FINISH_GUANG_GUANG          @"orderFinishGuangGuangNoti"
+//订单提交成功
+#define kNOTI_ORDER_SUBMIT_SUCCESS              @"orderSubmitSuccessNoti"
+//晒单成功
+#define kNOTI_SHAIDAN_SUCCESS                   @"shaidanSuccessNoti"
+//归还成功
+#define kNOTI_REBACK_POCKET_SUCCESS             @"rebackPocketSuccessNoti"
+//签收成功
+#define kNOTI_REGISN_POCKET_SUCCESS             @"regsignPocketSuccessNoti"
+//支付成功
+#define kNOTI_PAY_GOODS_SUCCESS                 @"payGoodsSuccessNoti"
+//选择优惠券
+#define kNOTI_CHOOSE_TICKET_SUCCESS             @"chooseTicketSuccessNoti"
+//支付成为会员的卡价格
+#define kNOTI_PAY_CARD_SUCCESS                  @"payCardSuccessNoti"
+//衣袋的数量发生改变的通知
+#define KNOTI_POCKET_NUMBER_CHANGE              @"pocketNumberChangeNoti"
+//尺码详情没有登录去登录，登录成功刷新界面
+#define kNOTI_LOGIN_SUCCESSFUL_RELOAD_WEBVIEW   @"loginSuccessfulReloadWebViewNoti"
+//保存在本地当前用户手中衣袋的商品件数
+#define kUser_Pocket_Goods_Number   @"userPocketGoodsNumber"
+//晒单成功 要分享
+#define kNOTI_SHAIDAN_SUCCESSFUL_SHARE          @"shaiDanSuccessfulShareNoti"
+//客服保存在本地当前用户的未读数
+#define kUser_Unread_QY_Message_Number @"userUnreadQYMessageNumber"
+//客服发过来的未读消息
+#define kNOTI_QY_Service_Send_Message_Change    @"QYServiceSendMessageChangeNoti"
+//会员天数要保存在本地 有多个入口到口袋
+#define kUSER_MEMBER_DAY                        @"userMemberDay"
+#define kUserId                     @"userid"
+#define kGoodsNumber                @"number"
+#define KDay                        @"day"
+
+
+
+//开启关闭推送提醒
+#define kUser_Push_On_Off           @"userOnOffPush"
+#define kOnOffPushStatus                @"onOffPushStatus"
+
+
+
+
+
+
+
+#endif
+
+#endif
+
+
+
+
+
