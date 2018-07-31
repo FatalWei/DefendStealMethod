@@ -22,6 +22,11 @@ static GlobalMethod *global = nil;
     return global;
 }
 
+#pragma mark - testNewBranch分支上添加衣个函数
+-(void)addFunctionOnTestNewBranch{
+    NSLog(@"addFunctionOnTestNewBranch");
+}
+
 
 
 //自定义颜色转换
