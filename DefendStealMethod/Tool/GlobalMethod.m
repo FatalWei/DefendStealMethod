@@ -88,8 +88,7 @@ void showAlertHint (NSString * hint)
     hud.removeFromSuperViewOnHide = YES;
     [hud hide:YES afterDelay:2];
     
-    NSString *str = @"哈哈";
-    NSURL *url = [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
 }
 
 
