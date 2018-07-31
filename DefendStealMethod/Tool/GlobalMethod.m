@@ -25,6 +25,7 @@ static GlobalMethod *global = nil;
 #pragma mark - testNewBranch分支上添加衣个函数
 -(void)addFunctionOnTestNewBranch{
     NSLog(@"addFunctionOnTestNewBranch");
+    NSLog(@"我在testNewBranch分支上");
 }
 
 
