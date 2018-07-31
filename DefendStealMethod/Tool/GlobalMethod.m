@@ -22,6 +22,21 @@ static GlobalMethod *global = nil;
     return global;
 }
 
+#pragma mark - testNewBranch分支上添加衣个函数
+-(void)addFunctionOnTestNewBranch{
+    NSLog(@"addFunctionOnTestNewBranch");
+    NSLog(@"改你");
+    NSLog(@"我在testNewBranch分支上");
+}
+
+
+#pragma mark - 在dev分支上添加一个函数
+-(void)addFunctionOnDevBranch{
+    NSLog(@"addFunctionOnDevBranch");
+    NSLog(@"这是哪来的");
+}
+
+
 
 
 //自定义颜色转换
@@ -88,8 +103,7 @@ void showAlertHint (NSString * hint)
     hud.removeFromSuperViewOnHide = YES;
     [hud hide:YES afterDelay:2];
     
-    NSString *str = @"哈哈";
-    NSURL *url = [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
 }
 
 
@@ -99,8 +113,6 @@ void showPCGHint (NSString *hint){
         return;
     }
     UIView *view = [[UIApplication sharedApplication].delegate window];
-//    PCGShowHintView *hintView = [[PCGShowHintView alloc]initWithHint:hint];
-//    [view addSubview:hintView];
 }
 
 void showPCGTopHint(NSString * hint){
@@ -108,10 +120,13 @@ void showPCGTopHint(NSString * hint){
         return;
     }
     UIView *view = [[UIApplication sharedApplication].delegate window];
-//    PCGShowTopHintView *hintView = [[PCGShowTopHintView alloc]initWithHint:hint];
-//    [view addSubview:hintView];
 }
 
+
+#pragma mark - just for git test
+-(void)justForGitTest{
+    NSLog(@"hello git");
+}
 
 #pragma mark  - 正则表达式验证
 //验证手机号格式
