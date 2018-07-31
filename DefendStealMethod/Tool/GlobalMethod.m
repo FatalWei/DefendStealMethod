@@ -26,6 +26,7 @@ static GlobalMethod *global = nil;
 -(void)addFunctionOnTestNewBranch{
     NSLog(@"addFunctionOnTestNewBranch");
     NSLog(@"改你");
+    NSLog(@"我在testNewBranch分支上");
 }
 
 
