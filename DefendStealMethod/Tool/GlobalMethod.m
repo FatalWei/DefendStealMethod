@@ -28,6 +28,11 @@ static GlobalMethod *global = nil;
 }
 
 
+#pragma mark - 在dev分支上添加一个函数
+-(void)addFunctionOnDevBranch{
+    NSLog(@"addFunctionOnDevBranch");
+}
+
 
 //自定义颜色转换
 id colorWithHexString  (NSString *color)
