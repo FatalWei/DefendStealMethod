@@ -98,8 +98,6 @@ void showPCGHint (NSString *hint){
         return;
     }
     UIView *view = [[UIApplication sharedApplication].delegate window];
-//    PCGShowHintView *hintView = [[PCGShowHintView alloc]initWithHint:hint];
-//    [view addSubview:hintView];
 }
 
 void showPCGTopHint(NSString * hint){
@@ -107,10 +105,13 @@ void showPCGTopHint(NSString * hint){
         return;
     }
     UIView *view = [[UIApplication sharedApplication].delegate window];
-//    PCGShowTopHintView *hintView = [[PCGShowTopHintView alloc]initWithHint:hint];
-//    [view addSubview:hintView];
 }
 
+
+#pragma mark - just for git test
+-(void)justForGitTest{
+    NSLog(@"hello git");
+}
 
 #pragma mark  - 正则表达式验证
 //验证手机号格式
